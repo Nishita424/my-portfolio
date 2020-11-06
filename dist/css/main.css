@@ -230,16 +230,26 @@ img {
     z-index: -1; }
   #header-home .header-content {
     text-align: center;
-    padding-top: 15%; }
+    padding-top: 50%; }
     #header-home .header-content h1 {
       font-size: 4rem;
       line-height: 1.2;
       color: #ffbc00; }
 
 #header-inner {
-  background: url("../img/showcase1.jpg") no-repeat 20% 30%/cover;
+  background-color: rgba(1, 1, 1, 0.4);
   height: 5.5rem;
-  border-bottom: 3px solid #ffbc00; }
+  border-bottom: 3px solid #ffbc00;
+  position: relative; }
+  #header-inner .overlay:before {
+    content: "";
+    background: url("../img/showcase1.jpg") no-repeat 20% 30%/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; }
 
 #home-a .specials {
   margin-top: 3rem;
@@ -271,15 +281,14 @@ img {
   display: grid;
   grid-template-columns: 0.7fr 2fr;
   grid-gap: 1.2rem;
-  padding: 0.8rem;
-  margin-bottom: 5rem; }
+  padding: 0.8rem; }
   #about-a .about-info .bio {
     border-left: 3px solid #ffbc00; }
     #about-a .about-info .bio h4 {
       padding: 2rem; }
     #about-a .about-info .bio p {
       text-align: justify;
-      padding: 0 5rem 1rem 5rem; }
+      padding: 0 3rem 1rem 3rem; }
 
 #about-b .progress {
   overflow: hidden;
@@ -297,6 +306,9 @@ img {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 1rem; }
+  #about-c .about-logos img {
+    height: 100px;
+    width: 100px; }
 
 #contact-a .text-fields {
   display: grid;
@@ -318,7 +330,8 @@ img {
     padding: 0.5rem 1rem; }
 
 #contact-a button[type="submit"] {
-  width: 40%; }
+  width: 40%;
+  margin-top: 1rem; }
 
 #contact-b .contact-info {
   display: grid;
@@ -348,9 +361,71 @@ img {
       padding: 0.5rem; }
       #main-footer .footer-content .social .fab:hover {
         background: #ffbc00; }
+      #main-footer .footer-content .social .fab:last-child {
+        margin: 0; }
+
+@media (max-width: 1300px) {
+  #about-c .about-logos {
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1; } }
 
 @media (max-width: 800px) {
   #header-home {
     height: 10%; }
     #header-home .header-content {
-      padding-top: 5rem; } }
+      padding-top: 5rem; }
+  #about-c .about-logos {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1; } }
+
+@media (max-width: 500px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center; }
+    #main-nav li {
+      padding: 1rem; }
+  #header-home {
+    height: 9rem;
+    border-bottom: 3px solid #ffbc00;
+    background-position: 20% 30%; }
+    #header-home .header-content {
+      display: none; }
+  #header-inner {
+    height: 9rem; }
+  #home-a .specials,
+  #home-b .stats,
+  .items,
+  #contact-b .contact-info {
+    grid-template-columns: 1fr; }
+  #home-a .specials div {
+    border-bottom: 1px solid #f4f4f4;
+    padding-bottom: 1rem; }
+    #home-a .specials div:last-child {
+      border: none;
+      padding-bottom: 0; }
+  #home-b .stats div {
+    padding: 2rem 0 1rem 0; }
+  #about-a .about-info {
+    grid-template-columns: none; }
+    #about-a .about-info .bio p {
+      padding: 0 1rem 1rem 1rem; }
+  #about-c {
+    display: none; }
+  #contact-a .text-fields {
+    grid-template-areas: "name" "subject" "email" "phone" "message"; }
+  #contact-b div {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px #555 dotted; }
+    #contact-b div:last-child {
+      border: none;
+      margin-bottom: 0;
+      border-bottom: 0; }
+  #contact-c h1 {
+    font-size: 2rem; }
+  #main-footer {
+    height: 7rem; }
+    #main-footer .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem; } }

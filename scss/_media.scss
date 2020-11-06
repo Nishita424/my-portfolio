@@ -1,3 +1,13 @@
+@media (max-width: 1300px) {
+  #about {
+    &-c {
+      .about-logos {
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 1;
+      }
+    }
+  }
+}
 // Tablets & Smaller
 @media (max-width: 800px) {
   #header-home {
@@ -5,6 +15,124 @@
 
     .header-content {
       padding-top: 5rem;
+    }
+  }
+  #about {
+    &-c {
+      .about-logos {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1;
+      }
+    }
+  }
+}
+
+// Smartphones
+@media (max-width: 500px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+    li {
+      padding: 1rem;
+    }
+  }
+  #header {
+    &-home {
+      height: 9rem;
+      border-bottom: 3px solid $main-color;
+      background-position: 20% 30%;
+      .header-content {
+        display: none;
+      }
+    }
+    &-inner {
+      height: 9rem;
+    }
+  }
+
+  // Stack Grid Columns
+  #home-a .specials,
+  #home-b .stats,
+  .items,
+  #contact-b .contact-info {
+    grid-template-columns: 1fr;
+  }
+
+  // Home
+  #home {
+    &-a {
+      .specials div {
+        border-bottom: 1px solid $light-color;
+        padding-bottom: 1rem;
+
+        &:last-child {
+          border: none;
+          padding-bottom: 0;
+        }
+      }
+    }
+    &-b {
+      .stats div {
+        padding: 2rem 0 1rem 0;
+      }
+    }
+  }
+
+  // About
+  #about {
+    &-a {
+      .about-info {
+        grid-template-columns: none;
+        .bio {
+          p {
+            padding: 0 1rem 1rem 1rem;
+          }
+        }
+      }
+    }
+    &-c {
+      display: none;
+    }
+  }
+
+  // Contact
+  #contact {
+    &-a {
+      .text-fields {
+        grid-template-areas:
+          "name"
+          "subject"
+          "email"
+          "phone"
+          "message";
+      }
+    }
+    &-b {
+      div {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px #555 dotted;
+        &:last-child {
+          border: none;
+          margin-bottom: 0;
+          border-bottom: 0;
+        }
+      }
+    }
+    &-c {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  // Footer
+  #main-footer {
+    height: 7rem;
+    .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem;
     }
   }
 }
