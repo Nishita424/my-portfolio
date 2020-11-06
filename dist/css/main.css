@@ -9,7 +9,8 @@
   padding: 0.8rem 2rem;
   transition: all 0.5s;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  font-weight: bold; }
 
 .btn-main {
   color: #333;
@@ -229,7 +230,7 @@ img {
     z-index: -1; }
   #header-home .header-content {
     text-align: center;
-    padding-top: 20%; }
+    padding-top: 15%; }
     #header-home .header-content h1 {
       font-size: 4rem;
       line-height: 1.2;
@@ -278,7 +279,7 @@ img {
       padding: 2rem; }
     #about-a .about-info .bio p {
       text-align: justify;
-      padding: 0 5rem; }
+      padding: 0 5rem 1rem 5rem; }
 
 #about-b .progress {
   overflow: hidden;
@@ -347,3 +348,9 @@ img {
       padding: 0.5rem; }
       #main-footer .footer-content .social .fab:hover {
         background: #ffbc00; }
+
+@media (max-width: 800px) {
+  #header-home {
+    height: 10%; }
+    #header-home .header-content {
+      padding-top: 5rem; } }
