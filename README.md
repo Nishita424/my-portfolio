@@ -1,2 +1,2 @@
 # my-portfolio
-This is my portfolio site designed using modern languages
+This is my portfolio site designed using modern front end languages
