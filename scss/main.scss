@@ -159,6 +159,7 @@ img {
 
 // About Sections
 #about {
+  // About-A
   &-a {
     .about-info {
       display: grid;
@@ -180,6 +181,23 @@ img {
     //   border-left: 3px solid $main-color;
     //   padding: 0.8rem;
     // }
+  }
+  // About-B: Progress bars
+  &-b {
+    .progress {
+      overflow: hidden;
+      height: 20px;
+      background-color: $medium-color;
+      border-radius: 5px;
+      margin-bottom: 0.6rem;
+
+      div {
+        height: 100%;
+        color: #fff;
+        text-align: center;
+        background: $main-color;
+      }
+    }
   }
 }
 
