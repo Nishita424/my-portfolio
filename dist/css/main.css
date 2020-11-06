@@ -125,7 +125,7 @@ img {
       border-color: #ffbc00; }
 
 #header-home {
-  background: url("../img/showcase2.jpg") no-repeat center right/cover;
+  background: url("../img/showcase1.jpg") no-repeat center right/cover;
   height: 100vh;
   color: #fff;
   position: relative; }
@@ -145,7 +145,7 @@ img {
       color: #ffbc00; }
 
 #header-inner {
-  background: url("../img/showcase2.jpg") no-repeat 20% 30%/cover;
+  background: url("../img/showcase1.jpg") no-repeat 20% 30%/cover;
   height: 5.5rem;
   border-bottom: 3px solid #ffbc00; }
 
@@ -191,7 +191,7 @@ img {
   #main-footer .footer-content {
     display: flex;
     justify-content: space-between;
-    height: 5rem; }
+    align-items: center; }
     #main-footer .footer-content .social .fab {
       margin-right: 1rem;
       border: 2px #fff solid;
