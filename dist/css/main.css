@@ -230,7 +230,7 @@ img {
     z-index: -1; }
   #header-home .header-content {
     text-align: center;
-    padding-top: 50%; }
+    padding-top: 30vh; }
     #header-home .header-content h1 {
       font-size: 4rem;
       line-height: 1.2;
