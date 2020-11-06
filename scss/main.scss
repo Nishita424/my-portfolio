@@ -167,9 +167,17 @@ img {
       grid-template-columns: 0.5fr 2fr;
       grid-gap: 1.2rem;
       padding: 0.8rem;
-      margin-bottom: 100px;
+      margin-bottom: 5rem;
       .bio {
         border-left: 3px solid $main-color;
+
+        h4 {
+          padding: 2rem;
+        }
+        p {
+          text-align: justify;
+          padding: 0 5rem;
+        }
       }
     }
     // Grid area
@@ -197,6 +205,15 @@ img {
         text-align: center;
         background: $main-color;
       }
+    }
+  }
+
+  // About-C: About-logos
+  &-c {
+    .about-logos {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: 1rem;
     }
   }
 }

@@ -180,9 +180,14 @@ img {
   grid-template-columns: 0.5fr 2fr;
   grid-gap: 1.2rem;
   padding: 0.8rem;
-  margin-bottom: 100px; }
+  margin-bottom: 5rem; }
   #about-a .about-info .bio {
     border-left: 3px solid #ffbc00; }
+    #about-a .about-info .bio h4 {
+      padding: 2rem; }
+    #about-a .about-info .bio p {
+      text-align: justify;
+      padding: 0 5rem; }
 
 #about-b .progress {
   overflow: hidden;
@@ -195,6 +200,11 @@ img {
     color: #fff;
     text-align: center;
     background: #ffbc00; }
+
+#about-c .about-logos {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1rem; }
 
 #main-footer {
   background: #333;
