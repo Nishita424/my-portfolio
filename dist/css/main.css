@@ -45,8 +45,9 @@ input[class^="btn-"]:hover {
   color: #000; }
 
 .lead {
-  font-size: 1.3rem;
-  margin-bottom: 2rem; }
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem; }
 
 .text-center {
   text-align: center; }
@@ -213,17 +214,19 @@ img {
       border-color: #ffbc00; }
 
 #header-home {
-  background: url("../img/showcase1.jpg") no-repeat center right/cover;
+  background-color: rgba(1, 1, 1, 0.4);
   height: 100vh;
   color: #fff;
   position: relative; }
-  #header-home .overlay {
-    background-color: rgba(1, 1, 1, 0.6);
+  #header-home .overlay:before {
+    content: "";
+    background: url("../img/showcase1.jpg") no-repeat center right/cover;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    z-index: -1; }
   #header-home .header-content {
     text-align: center;
     padding-top: 20%; }

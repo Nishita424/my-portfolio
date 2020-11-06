@@ -73,18 +73,22 @@ img {
 #header {
   // Header home
   &-home {
-    background: $bg-image no-repeat center right/cover;
+    // background: $bg-image no-repeat center right/cover;
+    background-color: rgba(1, 1, 1, 0.4);
     height: 100vh;
     color: #fff;
     position: relative;
 
-    .overlay {
-      background-color: rgba(1, 1, 1, 0.6);
+    .overlay:before {
+      // background-color: rgba(1, 1, 1, 0.6);
+      content: "";
+      background: $bg-image no-repeat center right/cover;
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
+      z-index: -1;
     }
 
     // Header content
